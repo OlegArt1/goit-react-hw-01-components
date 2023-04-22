@@ -10,8 +10,7 @@ import friends from "./friend-list/friends.json";
 import { TransactionHistory } from "./transaction-history/TransactionHistory";
 import transactions from "./transaction-history/transactions.json";
 
-export const App = () =>
-{
+export const App = () => {
     return (
         <div>
             <Profile
