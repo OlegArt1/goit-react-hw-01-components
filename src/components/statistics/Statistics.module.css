@@ -1,67 +1,153 @@
-
-.statistics
+.block
 {
+    max-width: 500px;
     margin: 50px auto;
-    width: 50%;
-}
-.title
-{
-    margin: 0 auto;
-    padding: 10%;
-    width: 90%;
-    text-align: center;
-    text-transform: uppercase;
-}
-.stat_list
-{
-    margin: 0;
-    padding: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
-    list-style: none;
 }
-.item
+button
 {
-    padding: 10%;  
-    text-align: center;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.title, .item
-{
-    font-size: 20px;
-}
+    button:focus
+    {
+        border: 1px solid red;
+        background-color: red;
+    }
+    button:hover
+    {
+        border: 1px solid green;
+        background-color: green;
+    }
+    button:active
+    {
+        border: 1px solid blue;
+        background-color: blue;
+    }
+    button:hover, button:focus, button:active
+    {
+        color: white;
+    }
 .label
 {
+    padding: 10px 0;
+}
+.block_text
+{
+    max-width: 450px;
+    margin: 20px auto;
+    padding-left: 20px;
     display: block;
-    text-shadow: 1px 1px 2px rgb(106, 106, 106), -1px -1px 2px rgb(106, 106, 106);
 }
-.percentage
+.block_span
 {
-    text-shadow: 1px 1px 2px rgb(106, 106, 106), -1px -1px 2px rgb(106, 106, 106);
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-.label, .percentage
+span
 {
-    color: white;
+    margin: 0 10px;
 }
-/*
 @media screen and (min-width: 1200px)
 {
-    .title, .item
+    button
     {
-        font-size: xx-large;
+        width: 150px;
+        font-size: 20px;
+    }
+    h3
+    {
+        font-size: 30px;
+    }
+    span
+    {
+        font-size: 20px;
     }
 }
-@media screen and (max-width: 850px)
+@media screen and (max-width: 1200px)
 {
-    .title, .item
+    button
     {
-        font-size: medium;
+        width: 150px;
+        font-size: 20px;
     }
+    h3
+    {
+        font-size: 30px;
+    }
+    span
+    {
+        font-size: 20px;
+    }    
 }
-@media screen and (max-width: 650px)
+@media screen and (max-width: 920px)
 {
-    .title, .item
+    button
     {
-        font-size: small;
+        padding: 8px 17px;
+        width: 140px;
+        font-size: 18px;
+    }
+    h3
+    {
+        font-size: 22px;
+    }
+    h2
+    {
+        padding-left: 20px;
+    }
+    .label
+    {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .block_text, .block_span
+    {
+        padding-left: 30px;
+    }
+    span
+    {
+        font-size: 18px;
     }
 }
-*/
+@media screen and (max-width: 620px)
+{
+    h1
+    {
+        font-size: x-large;
+    }
+    button
+    {
+        padding: 5px 15px;
+        width: 120px;
+        font-size: 15px;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
+    h2
+    {
+        padding-left: 40px;
+    }
+    .label
+    {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .block_text, .block_span
+    {
+        padding-left: 50px;
+    }
+    span
+    {
+        font-size: 15px;
+    }
+}
