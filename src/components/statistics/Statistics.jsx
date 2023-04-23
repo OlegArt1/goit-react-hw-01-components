@@ -1,4 +1,4 @@
-/* import PropTypes from "prop-types"; */
+import PropTypes from "prop-types";
 import Css from "./Statistics.module.css";
 
 function getRandomHexColor()
@@ -24,7 +24,6 @@ export const Statistics = ({ title, stats }) =>
         </section>
     );
 };
-/*
 Statistics.propTypes =
 {
     title: PropTypes.string,
@@ -36,4 +35,3 @@ Statistics.propTypes =
         })
     ).isRequired
 };
-*/
